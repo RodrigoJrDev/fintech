@@ -1,0 +1,107 @@
+
+form.form-login {
+  max-width: 540px;
+  width: 100%;
+  margin: 0 auto;
+}
+form.form-login label {
+  color: #000;
+  font-weight: 700;
+}
+form.form-login input {
+  border: 1px solid #454652;
+  border-radius: 8px;
+}
+form.form-login p {
+  text-align: end;
+  color: #000;
+  font-weight: 500;
+}
+form.form-login .btns-form {
+  display: flex;
+  flex-direction: column;
+}
+form.form-login .btns-form .btn-estilo {
+  color: #fff;
+  font-size: 18px;
+  font-weight: bolder;
+  min-width: 215px;
+  max-width: 100%;
+  height: 50px;
+  margin-bottom: 24px;
+  background: #712de0;
+  border-radius: 16px;
+}
+.outras-formas-login {
+  width: 540px;
+  max-width: 100%;
+
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 16px;
+}
+.outras-formas-login h2 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  color: #000;
+  position: relative;
+}
+.outras-formas-login h2:before {
+  content: "";
+  border-left: 1px solid #cfcfcf;
+  border: 1px solid #c9c9c9;
+  transform: rotate(0.35deg);
+  position: absolute;
+  width: 200px;
+  bottom: 10px;
+  left: 0;
+}
+.outras-formas-login h2:after {
+  content: "";
+  border-left: 1px solid #cfcfcf;
+  border: 1px solid #c9c9c9;
+  transform: rotate(0.35deg);
+  position: absolute;
+  width: 200px;
+  bottom: 10px;
+  right: 0;
+}
+.outras-formas-login p {
+  font-weight: bolder;
+}
+.outras-formas-login p:before {
+  content: "";
+}
+.icones-formas-login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+  margin-top: 16px;
+}
+
+/* 
+** Responsivo ------------------------------------ */
+
+@media (max-width: 767.98px) {
+  body {
+    max-height: initial;
+  }
+  main {
+    margin-top: 32px;
+  }
+  .outras-formas-login h2:before,
+  .outras-formas-login h2:after {
+    width: 33%;
+  }
+}
+@media (max-width: 430.98px) {
+  .outras-formas-login h2:before,
+  .outras-formas-login h2:after {
+    width: 25%;
+  }
+  .icones-formas-login {
+    gap: 10px;
+  }
+}
